@@ -1,7 +1,7 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
 carpentry: "swc"    # what kind of Carpentry (must be either "lc" or "dc" or "swc")
-venue: "The University of Michigan"        # brief name of host site without address (e.g., "Euphoric State University")
+venue: "University of Michigan"        # brief name of host site without address (e.g., "Euphoric State University")
 address: "Room 2737 (Furstenberg Center), Medical Science Building II, 1137 Catherine Street, Ann Arbor, MI 48109"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
@@ -148,7 +148,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   large-print handouts are available if needed by notifying the
   organizers in advance.  If we can help making learning easier for
   you (e.g. sign-language interpreters, lactation facilities) please
-  <a href="mailto:{{page.contact}}">get in touch</a> and we will
+  <a href="mailto:{{page.email}}">get in touch</a> and we will
   attempt to provide them.
 </p>
 
