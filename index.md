@@ -39,9 +39,7 @@ eventbrite:          # optional: alphanumeric key for Eventbrite registration, e
 <p id="registration" align="center">
   <strong>
 	  <font size="36">
-	  <br><br>
 	  <a href="{{page.registration}}">Click Here to Register</a>
-	  <br><br>
 	  </font>
   </strong>
 </p>
