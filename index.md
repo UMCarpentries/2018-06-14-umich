@@ -14,7 +14,8 @@ instructor: ["William Close", "Lisa Abernathy Close", "Nicholas Lesniak"] # boxe
 helper: ["TBD"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["wlclose@med.umich.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes: "http://pad.software-carpentry.org/2018-06-14-umich"            # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
-eventbrite: https://ttc.iss.lsa.umich.edu/ttc/sessions/software-carpentry-workshop-shell-r-git-2/          # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+registration: https://ttc.iss.lsa.umich.edu/ttc/sessions/software-carpentry-workshop-shell-r-git-2/          # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+eventbrite:          # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
 {% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
@@ -29,6 +30,22 @@ eventbrite: https://ttc.iss.lsa.umich.edu/ttc/sessions/software-carpentry-worksh
 {% endcomment %}
 
 {% comment %}
+  REGISTRATION
+
+  This block includes link to website for registration if using
+  something other than Eventbrite
+{% endcomment %}
+{% if page.registration %}
+<iframe
+  src="{{page.registration}}"
+  frameborder="0"
+  width="100%"
+  height="496px"
+  scrolling="auto">
+</iframe>
+{% endif %}
+
+{% comment %}
   EVENTBRITE
 
   This block includes the Eventbrite registration widget if
@@ -38,10 +55,10 @@ eventbrite: https://ttc.iss.lsa.umich.edu/ttc/sessions/software-carpentry-worksh
 {% endcomment %}
 {% if page.eventbrite %}
 <iframe
-  src="{{page.eventbrite}}"
+  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
   frameborder="0"
   width="100%"
-  height="248px"
+  height="280px"
   scrolling="auto">
 </iframe>
 {% endif %}
