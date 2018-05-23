@@ -36,7 +36,6 @@ eventbrite:          # optional: alphanumeric key for Eventbrite registration, e
   website for registration if using something other than Eventbrite
 {% endcomment %}
 {% if page.registration %}
-<head>
 <style>
 .reg_button {
     background-color: #002966; /* Michigan Blue */
@@ -61,11 +60,9 @@ eventbrite:          # optional: alphanumeric key for Eventbrite registration, e
 }
 
 </style>
-</head>
 
-<body>
 <div>
-	<button type="button" class="reg_button" style="display: block; margin: 0 auto;" onclick=" window.open('{{page.registration}}','_blank')"> Register</button>
+  <button type="button" class="reg_button" style="display: block; margin: 0 auto;" onclick=" window.open('{{page.registration}}','_blank')"> Register</button>
 </div>
 	
 {% comment %}
