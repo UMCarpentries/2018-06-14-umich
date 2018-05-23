@@ -32,38 +32,18 @@ eventbrite:          # optional: alphanumeric key for Eventbrite registration, e
 {% comment %}
   REGISTRATION
 
-  This block includes a button that opens a separate page that links to
-  website for registration if using something other than Eventbrite
+  This creates a link to the correct website for registration if
+  using something other than Eventbrite
 {% endcomment %}
 {% if page.registration %}
-<style>
-.reg_button {
-    background-color: #002966; /* Michigan Blue */
-    color: black;
-    border: 2px solid #555555;
-    color: white;
-    padding: 15px 60px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 36px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 10px;
-    box-shadow: 2px 16px 32px 2px rgba(0,0,0,0.2), 0 3px #999;
-}
-
-.reg_button:active {
-  background-color: #FFD100;
-  box-shadow: 2px 16px 32px 2px rgba(0,0,0,0.2), 0 1px #666;
-  transform: translateY(4px);
-}
-
-</style>
-
-<div>
-  <button type="button" class="reg_button" style="display: block; margin: 0 auto;" onclick=" window.open('{{page.registration}}','_blank')"> Register</button>
-</div>
+<p id="registration" align="center">
+  <strong>
+	  <br><br>
+	  <a href="{{page.registration}}">Click Here to Register</a>
+	  <br><br>
+  </strong>
+</p>
+{% endif %}
 	
 {% comment %}
   EVENTBRITE
