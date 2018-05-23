@@ -14,7 +14,7 @@ instructor: ["William Close", "Lisa Abernathy Close", "Nicholas Lesniak"] # boxe
 helper: ["TBD"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["wlclose@med.umich.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes: "http://pad.software-carpentry.org/2018-06-14-umich"            # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
-registration: https://ttc.iss.lsa.umich.edu/ttc/sessions/software-carpentry-workshop-shell-r-git-2/          # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+registration: https://ttc.iss.lsa.umich.edu/ttc/sessions/software-carpentry-workshop-shell-r-git-2/register/          # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 eventbrite:          # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
@@ -32,19 +32,42 @@ eventbrite:          # optional: alphanumeric key for Eventbrite registration, e
 {% comment %}
   REGISTRATION
 
-  This block includes link to website for registration if using
-  something other than Eventbrite
+  This block includes a button that opens a separate page that links to
+  website for registration if using something other than Eventbrite
 {% endcomment %}
 {% if page.registration %}
-<iframe
-  src="{{page.registration}}"
-  frameborder="0"
-  width="100%"
-  height="496"
-  scrolling="auto">
-</iframe>
-{% endif %}
+<head>
+<style>
+.reg_button {
+    background-color: #002966; /* Michigan Blue */
+    color: black;
+    border: 2px solid #555555;
+    color: white;
+    padding: 15px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 36px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 2px 16px 32px 2px rgba(0,0,0,0.2), 0 3px #999;
+}
 
+.reg_button:active {
+  background-color: #FFD100;
+  box-shadow: 2px 16px 32px 2px rgba(0,0,0,0.2), 0 1px #666;
+  transform: translateY(4px);
+}
+
+</style>
+</head>
+
+<body>
+<div>
+	<button type="button" class="reg_button" style="display: block; margin: 0 auto;" onclick=" window.open('{{page.registration}}','_blank')"> Register</button>
+</div>
+	
 {% comment %}
   EVENTBRITE
 
