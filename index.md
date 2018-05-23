@@ -40,7 +40,7 @@ eventbrite:          # optional: alphanumeric key for Eventbrite registration, e
   src="{{page.registration}}"
   frameborder="0"
   width="100%"
-  height="496px"
+  height="496"
   scrolling="auto">
 </iframe>
 {% endif %}
