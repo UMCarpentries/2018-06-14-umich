@@ -38,9 +38,11 @@ eventbrite:          # optional: alphanumeric key for Eventbrite registration, e
 {% if page.registration %}
 <p id="registration" align="center">
   <strong>
+	  <font size="36"
 	  <br><br>
 	  <a href="{{page.registration}}">Click Here to Register</a>
 	  <br><br>
+	  </font>
   </strong>
 </p>
 {% endif %}
