@@ -16,6 +16,7 @@ email: ["wlclose@med.umich.edu"]    # boxed, comma-separated list of contact ema
 collaborative_notes: "http://pad.software-carpentry.org/2018-06-14-umich"            # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
 registration: https://ttc.iss.lsa.umich.edu/ttc/sessions/software-carpentry-workshop-shell-r-git-2/register/          # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 eventbrite:          # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+photography: yes          # optional: if pictures will be taken type "yes" otherwise, leave blank. If photographs will be taken, make sure to print out releases to be made available at the start of the workshop
 ---
 
 {% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
@@ -168,6 +169,19 @@ eventbrite:          # optional: alphanumeric key for Eventbrite registration, e
   <a href="mailto:{{page.email}}">get in touch</a> and we will
   attempt to provide them.
 </p>
+
+{% comment %}
+  PHOTOGRAPHY
+
+  Include the following language if pictures will be taken
+  at the workshop.
+{% endcomment %}
+{% if page.photography %}
+<p id="photos">
+	<strong>Photography</strong>:
+	Photographs may be taken during the event for use in promotional materials regarding the University of Michigan's chapter of Software Carpentry. Participants may opt in to being photographed by signing a waiver on the day of the event.
+</p>
+{% endif %}
 
 {% comment %}
   CONTACT EMAIL ADDRESS
