@@ -179,7 +179,7 @@ photography: yes          # optional: if pictures will be taken type "yes" other
 {% if page.photography %}
 <p id="photos">
 	<strong>Photography</strong>:
-	Photographs may be taken during the event for use in promotional materials regarding the University of Michigan's chapter of Software Carpentry. Participants may opt in to being photographed by signing a waiver on the day of the event.
+	Photographs may be taken during the event for use in promotional materials regarding the University of Michigan's chapter of Software Carpentry. Participants may opt into being photographed by signing a waiver on the day of the event.
 </p>
 {% endif %}
 
